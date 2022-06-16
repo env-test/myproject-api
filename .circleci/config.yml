@@ -106,6 +106,7 @@ jobs:
             ssh-add -D
             ssh-add ~/.ssh/id_rsa_a9637234440be91ad845218cecf7af1c # EDIT this with the SSH key fingerprint from circleci seettings (without columns)
             git clone git@github.com:$GITOPS_REPO_OWNER/$GITOPS_REPO.git
+            ls
             cd $GITOPS_REPO.git
             git config user.email "git@circleci.com"
             git config user.name "CircleCI"
